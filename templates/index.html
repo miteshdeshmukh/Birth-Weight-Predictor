@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     * {
-      box-sizing: border-box;  /* ensures borders don’t break layout */
+      box-sizing: border-box;
     }
 
     body {
@@ -55,7 +55,7 @@
     input {
       width: 100%;
       padding: 10px 12px 10px 38px;
-      border: 2px solid #bbb;   /* thicker border */
+      border: 2px solid #bbb;
       border-radius: 6px;
       font-size: 14px;
       background: #f9f9f9;
@@ -72,7 +72,7 @@
     .grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 16px; /* spacing prevents overflow */
+      gap: 16px;
     }
 
     button {
@@ -115,14 +115,16 @@
         </div>
         <div class="input-group">
           <i class="fa-solid fa-ruler-vertical"></i>
-          <input name="height" type="number" placeholder="Height (cm)">
+          <!-- Changed from cm to inches -->
+          <input name="height" type="number" placeholder="Height (inches)">
         </div>
       </div>
 
       <div class="grid">
         <div class="input-group">
           <i class="fa-solid fa-weight-scale"></i>
-          <input name="weight" type="number" placeholder="Weight (kg)">
+          <!-- Changed from kg to ounces -->
+          <input name="weight" type="number" placeholder="Weight (ounces)">
         </div>
         <div class="input-group">
           <i class="fa-solid fa-smoking"></i>
@@ -132,7 +134,7 @@
 
       <button type="submit">Predict Birth Weight</button>
     </form>
-    <h3>Pridicted Birth Weight:{{prediction}}</h3>
+    <h3>Predicted Birth Weight: {{prediction}}</h3>
   </div>
 </body>
 </html>
