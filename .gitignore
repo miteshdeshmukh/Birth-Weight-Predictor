@@ -1,3 +1,6 @@
 myvenv
 dataset
 model_training.ipynb
+.env
+__pycache__/
+*.pyc
